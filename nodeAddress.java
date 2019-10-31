@@ -15,16 +15,16 @@ public class nodeAddress {
         }
     }
     static void insert(int d){
-        Node new_Node = new Node(d);
+        Node ew_Node = new Node(d);
         if (llist.head == null){
-            llist.head = new_Node;
+            llist.head = ew_Node;
         }
         else {
             Node currNode = llist.head;
             while(currNode.next != null){
                 currNode = currNode.next;
             }
-            currNode.next = new_Node;
+            currNode.next = ew_Node;
             new_Node.prev = currNode;
         }
     }
